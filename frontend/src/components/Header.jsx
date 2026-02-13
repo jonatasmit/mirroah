@@ -50,17 +50,9 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#inicio" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full blur-md opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <img 
-                src="https://customer-assets.emergentagent.com/job_cbf76acb-c35a-4eda-86d6-dc663817ebb5/artifacts/mpdv8di6_mirroah%20deck%20bar%20logo.png" 
-                alt="Mirroah Deck Bar" 
-                className="relative h-12 w-auto object-contain"
-              />
-            </div>
-            <span className={`font-righteous text-2xl transition-colors ${
+          {/* Logo/Brand */}
+          <a href="#inicio" className="group">
+            <span className={`font-righteous text-3xl transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white drop-shadow-lg'
             }`}>
               MIRROAH
@@ -68,7 +60,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {menuItems.map((item) => (
               <a
                 key={item.label}

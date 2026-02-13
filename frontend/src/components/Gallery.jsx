@@ -17,20 +17,8 @@ const Gallery = () => {
     },
     {
       id: 3,
-      src: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/abn4oq1h_faro%20beach%20club.jpg',
-      alt: 'Ambiente do deck bar',
-      span: 'md:col-span-1'
-    },
-    {
-      id: 4,
-      src: 'https://customer-assets.emergentagent.com/job_cbf76acb-c35a-4eda-86d6-dc663817ebb5/artifacts/dd47d01t_mirroah%20carnaval%20dia%202.png',
-      alt: 'Evento Carnaval - Sábado',
-      span: 'md:col-span-1'
-    },
-    {
-      id: 5,
-      src: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/9djjkeo1_mirroah%20carnaval%20dia%203.png',
-      alt: 'Evento Carnaval - Domingo',
+      src: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/bmm58ts9_faro%20beach%20club.jpg',
+      alt: 'Aqui no Mirroah',
       span: 'md:col-span-1'
     }
   ];

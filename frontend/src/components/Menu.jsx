@@ -83,21 +83,21 @@ const Menu = () => {
           ))}
         </div>
 
-        {/* Coming Soon Banner */}
-        <div className="bg-gradient-to-r from-gray-50 to-white rounded-3xl p-8 md:p-12 border-2 border-dashed border-gray-300 text-center">
+        {/* Available Now Banner */}
+        <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-orange-500 rounded-3xl p-8 md:p-12 shadow-2xl text-center">
           <div className="max-w-3xl mx-auto">
-            <h3 className="font-righteous text-3xl md:text-4xl text-gray-900 mb-4">
-              Cardápio Completo em Breve!
+            <h3 className="font-righteous text-3xl md:text-4xl text-white mb-4">
+              Cardápio Disponível!
             </h3>
-            <p className="font-poppins text-lg text-gray-600 mb-6">
-              Estamos preparando nosso cardápio completo com todos os detalhes dos nossos pratos, 
-              drinks e preços. Enquanto isso, entre em contato para mais informações!
+            <p className="font-poppins text-lg text-white/95 mb-6">
+              Consulte nosso cardápio completo com drinks tropicais, petiscos deliciosos e pratos especiais. 
+              Entre em contato pelo WhatsApp para fazer seu pedido!
             </p>
             <button
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-r from-green-500 to-green-600 text-white font-poppins font-bold px-8 py-4 rounded-full hover:scale-110 hover:shadow-xl transition-all duration-300"
+              className="bg-white text-gray-900 font-poppins font-bold px-8 py-4 rounded-full hover:scale-110 hover:shadow-2xl transition-all duration-300"
             >
-              Consultar Cardápio pelo WhatsApp
+              Ver Cardápio no WhatsApp
             </button>
           </div>
         </div>

@@ -101,7 +101,7 @@ const Contact = () => {
                     Horário de Funcionamento
                   </h3>
                   <div className="space-y-1 font-poppins text-white/90">
-                    <p>Quinta a Domingo: 12h às 22h</p>
+                    <p>Quinta a Domingo: 12h às 02h</p>
                     <p>Eventos Especiais: Confira nossa programação</p>
                     <p className="text-sm mt-2 text-white/80">
                       * Horários podem variar durante o carnaval e eventos especiais

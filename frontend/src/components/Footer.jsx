@@ -16,13 +16,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_cbf76acb-c35a-4eda-86d6-dc663817ebb5/artifacts/mpdv8di6_mirroah%20deck%20bar%20logo.png" 
-                alt="Mirroah Deck Bar" 
-                className="h-12 w-auto"
-              />
-              <span className="font-righteous text-2xl">MIRROAH</span>
+            <div className="mb-4">
+              <span className="font-righteous text-3xl text-white">MIRROAH</span>
             </div>
             <p className="font-poppins text-gray-400 leading-relaxed mb-4">
               O melhor beach club do Rio de Janeiro. Carnaval o ano todo, música eletrônica, 
@@ -129,12 +124,17 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="font-poppins text-gray-400 text-sm text-center md:text-left">
-            © {currentYear} Mirroah Deck Bar. Todos os direitos reservados.
-          </p>
+          <div className="text-center md:text-left">
+            <p className="font-poppins text-gray-400 text-sm">
+              © {currentYear} Mirroah Deck Bar. Todos os direitos reservados.
+            </p>
+            <p className="font-poppins text-gray-500 text-xs mt-1">
+              CNPJ: 21.534.683/0001-37
+            </p>
+          </div>
           
           <div className="flex items-center space-x-4 font-poppins text-sm text-gray-400">
-            <span>Feito para o melhor carnaval do Rio! 🎉</span>
+            <span>Feito por Sucesso VIP Empreendimentos</span>
           </div>
         </div>
 

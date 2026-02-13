@@ -4,6 +4,15 @@ import { Calendar, Clock, Music2, ExternalLink } from 'lucide-react';
 const Events = () => {
   const events = [
     {
+      id: 0,
+      day: 'QUI 13/02',
+      time: '12h',
+      title: 'MIRROAH CARNAVAL DIA 1',
+      djs: 'INICIAL COLE SERVIÇOS EVENTOS EXCLUSIVOS CONTATO',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/ltldnnns_mirroah%20carnaval%20dia%201.png',
+      color: 'from-yellow-400 to-orange-500'
+    },
+    {
       id: 1,
       day: 'SÁB 14/02',
       time: '12h',
@@ -60,7 +69,7 @@ const Events = () => {
             CARNAVAL 2025
           </h2>
           <p className="font-poppins text-xl text-gray-600 max-w-2xl mx-auto">
-            4 dias de muita festa, música eletrônica e samba no melhor beach club do Rio!
+            5 dias de muita festa, música eletrônica e samba no melhor beach club do Rio!
           </p>
         </div>
 
