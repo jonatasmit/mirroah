@@ -82,13 +82,13 @@ const About = () => {
               A Melhor Experiência de Beach Club do Rio
             </h3>
             <p className="font-poppins text-lg text-gray-700 mb-6 leading-relaxed">
-              Localizado na zona sul do Rio de Janeiro, o Mirroah Deck Bar oferece uma experiência 
-              completa de beach club tropical, combinando a beleza natural das praias cariocas com 
-              eventos incríveis, música eletrônica de qualidade e uma atmosfera contagiante.
+              Localizado na zona sul do Rio de Janeiro, o Mirroah Deck Bar é o point perfeito para curtir o carnaval 
+              o ano todo! Nossa estrutura completa à beira-mar oferece eventos com os melhores DJs, drinks exclusivos e 
+              uma atmosfera única que combina samba com música eletrônica.
             </p>
             <p className="font-poppins text-lg text-gray-700 mb-6 leading-relaxed">
-              Nossa proposta é trazer o espírito do carnaval para todos os dias do ano, criando 
-              momentos inesquecíveis à beira-mar, com drinks refrescantes, boa música e muita diversão!
+              Venha viver momentos inesquecíveis com vista privilegiada para o mar, som de qualidade e o melhor do 
+              carnaval carioca em cada evento!
             </p>
             <div className="flex flex-wrap gap-3">
               <div className="flex items-center space-x-2 bg-gradient-to-r from-yellow-100 to-orange-100 px-4 py-2 rounded-full">

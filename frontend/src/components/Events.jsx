@@ -5,47 +5,57 @@ const Events = () => {
   const events = [
     {
       id: 0,
-      day: 'QUI 13/02',
+      day: 'SEX 13/02',
       time: '12h',
-      title: 'MIRROAH CARNAVAL DIA 1',
-      djs: 'INICIAL COLE SERVIÇOS EVENTOS EXCLUSIVOS CONTATO',
-      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/ltldnnns_mirroah%20carnaval%20dia%201.png',
-      color: 'from-yellow-400 to-orange-500'
+      title: 'ELETRÔNICO',
+      subtitle: 'Carnaval Mirroah - Abertura',
+      djs: 'NAGA • DENER • ANNALÚ • ZUNTO',
+      description: 'Abertura do carnaval com música eletrônica de qualidade',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/45e7k4l9_carnaval%20mirroah%20deck%20bar%20dia%2013.png',
+      color: 'from-purple-500 to-orange-500'
     },
     {
       id: 1,
       day: 'SÁB 14/02',
       time: '12h',
-      title: 'SAMBINHA ALLAN COELHO ELETRÔNICO',
-      djs: 'SCARLATH • ALLAN COELHO • DON SUAREZ',
-      image: 'https://customer-assets.emergentagent.com/job_cbf76acb-c35a-4eda-86d6-dc663817ebb5/artifacts/dd47d01t_mirroah%20carnaval%20dia%202.png',
+      title: 'SAMBINHA ALLAN COELHO',
+      subtitle: 'Eletrônico',
+      djs: 'SCARLATELLI • ANDRADI • DON SUAREZ',
+      description: 'Samba e eletrônico numa combinação explosiva',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/pjm4j0kc_carnaval%20mirroah%20deck%20bar%20dia%2014.png',
       color: 'from-pink-500 to-rose-600'
     },
     {
       id: 2,
       day: 'DOM 15/02',
       time: '12h',
-      title: 'SAMBINHA ICCOR BRANTE ELETRÔNICO',
-      djs: 'RAY COSTA • LAURA KELLEAR • FINÃO',
-      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/9djjkeo1_mirroah%20carnaval%20dia%203.png',
+      title: 'SAMBINHA IGOR BRANTE',
+      subtitle: 'Eletrônico',
+      djs: 'RAY COSTA • LAURA KELLER • FINÃO',
+      description: 'Domingo de carnaval com samba e muita energia',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/aqijhmz8_carnaval%20mirroah%20deck%20bar%20dia%2015.png',
       color: 'from-yellow-400 to-orange-500'
     },
     {
       id: 3,
       day: 'SEG 16/02',
       time: '12h',
-      title: 'SAMBINHA GRUPO PAGODAR ELETRÔNICO',
+      title: 'SAMBINHA GRUPO PAGODAR',
+      subtitle: 'Eletrônico',
       djs: 'VERLICHT • LOHAN • DON SUAREZ • KIBE',
-      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/b57fg9vk_mirroah%20carnaval%20dia%204.png',
+      description: 'Carnaval continua com o melhor do pagode eletrônico',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/t45b7rxw_carnaval%20mirroah%20deck%20bar%20dia%2016.png',
       color: 'from-pink-500 to-fuchsia-600'
     },
     {
       id: 4,
       day: 'TER 17/02',
       time: '12h',
-      title: 'SAMBINHA HANAYA ELETRÔNICO',
-      djs: 'BRUNA STRAIT • ZUMO B2B DECAZ • VICK',
-      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/zhd18iy3_mirroah%20carnaval%20dia%205.png',
+      title: 'SAMBINHA HANAYA',
+      subtitle: 'Eletrônico',
+      djs: 'BRUNA STRAIT • ZUNTO B2B DÉEAZ • VICK',
+      description: 'Encerramento épico do carnaval com muita festa',
+      image: 'https://customer-assets.emergentagent.com/job_carnival-rio-vibes/artifacts/mr0rvzv2_carnaval%20mirroah%20deck%20bar%20dia%2017.png',
       color: 'from-yellow-400 to-amber-500'
     }
   ];
@@ -88,6 +98,7 @@ const Events = () => {
                 <img
                   src={event.image}
                   alt={event.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${event.color} opacity-60 group-hover:opacity-40 transition-opacity`}></div>
@@ -111,13 +122,25 @@ const Events = () => {
 
               {/* Event Info */}
               <div className="p-6">
-                <h3 className="font-righteous text-2xl text-gray-900 mb-3 leading-tight">
+                <h3 className="font-righteous text-2xl text-gray-900 mb-2 leading-tight">
                   {event.title}
                 </h3>
                 
+                {event.subtitle && (
+                  <p className="font-poppins text-sm text-gray-500 mb-3 uppercase tracking-wide">
+                    {event.subtitle}
+                  </p>
+                )}
+                
+                {event.description && (
+                  <p className="font-poppins text-sm text-gray-600 mb-3 italic">
+                    {event.description}
+                  </p>
+                )}
+                
                 <div className="flex items-start space-x-3 mb-4">
                   <Music2 className="w-5 h-5 text-pink-500 mt-1 flex-shrink-0" />
-                  <p className="font-poppins text-gray-700 leading-relaxed">
+                  <p className="font-poppins text-gray-700 leading-relaxed font-medium">
                     {event.djs}
                   </p>
                 </div>
@@ -137,19 +160,18 @@ const Events = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-yellow-400 via-pink-500 to-orange-500 rounded-3xl p-8 md:p-12 shadow-xl">
           <h3 className="font-righteous text-3xl md:text-4xl text-white mb-4">
-            Não Perca essa Festa!
+            Não Perca o Carnaval 2025!
           </h3>
           <p className="font-poppins text-lg text-white/90 mb-6 max-w-2xl mx-auto">
-            Entre em contato agora e garanta seu lugar nos melhores eventos de carnaval do Rio!
+            5 dias de festa com os melhores DJs do Rio! Samba, eletrônico, drinks e muita energia. Reserve agora!
           </p>
           <button
             onClick={handleWhatsAppClick}
             className="bg-white text-gray-900 font-poppins font-bold px-8 py-4 rounded-full hover:scale-110 hover:shadow-2xl transition-all duration-300"
           >
-            Falar no WhatsApp
+            Reservar pelo WhatsApp
           </button>
         </div>
       </div>
