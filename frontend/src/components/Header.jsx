@@ -60,13 +60,13 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center gap-8">
             {menuItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={(e) => handleMenuClick(item, e)}
-                className={`font-poppins font-medium transition-all duration-300 hover:scale-110 ${
+                className={`font-poppins font-medium transition-all duration-300 hover:scale-110 whitespace-nowrap ${
                   isScrolled 
                     ? 'text-gray-800 hover:text-pink-600' 
                     : 'text-white hover:text-yellow-300 drop-shadow-md'
