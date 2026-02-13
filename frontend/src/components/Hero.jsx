@@ -28,15 +28,6 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        {/* Logo */}
-        <div className="mb-8 animate-fade-in-down">
-          <img
-            src="https://customer-assets.emergentagent.com/job_cbf76acb-c35a-4eda-86d6-dc663817ebb5/artifacts/mpdv8di6_mirroah%20deck%20bar%20logo.png"
-            alt="Carnaval Mirroah"
-            className="w-full max-w-md mx-auto mb-6 drop-shadow-2xl"
-          />
-        </div>
-
         {/* Headline */}
         <h1 className="font-righteous text-5xl md:text-7xl lg:text-8xl text-white mb-6 animate-fade-in-up leading-tight">
           CARNAVAL
